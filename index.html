@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-screen">
+      <h2>Add New Task</h2>
+      <form id="taskForm">
+        <input type="text" id="taskTitle" placeholder="Task Title" required>
+        <textarea id="taskDescription" placeholder="Task Description" required></textarea>
+        <button type="submit">Save Task</button>
+      </form>
+    </div>
+    <div class="right-screen">
+      <h2>Pending & Completed Tasks</h2>
+      <div class="task-columns">
+        <div class="column">
+          <h3>Title</h3>
+          <ul id="taskTitles"></ul>
+        </div>
+        <div class="column">
+          <h3>Description</h3>
+          <ul id="taskDescriptions"></ul>
+        </div>
+        <div class="column">
+          <h3>Complete</h3>
+          <ul id="completeButtons"></ul>
+        </div>
+        <div class="column">
+          <h3>Delete</h3>
+          <ul id="deleteButtons"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
